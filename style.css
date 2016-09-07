@@ -46,6 +46,8 @@ img {
 
 .title {
   font-size: 15pt;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* transition */
