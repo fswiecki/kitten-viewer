@@ -45,7 +45,7 @@ img {
 
 .caption {
   max-height: 50%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* TITLE BAR & NAV */
