@@ -20,6 +20,10 @@
   font-size: 12pt;
 }
 
+.widget:hover > .caption, .widget:hover > .title {
+  opacity: 1;
+}
+
 img {
   position: absolute;
   z-index: 0;
@@ -32,6 +36,8 @@ img {
   color: white;
   z-index: 1;
   padding: 3px;
+  opacity: 0;
+  transition: opacity .5s ease;
 }
 
 .title {
