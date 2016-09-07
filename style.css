@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.widget {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12pt;
+}
+
+img {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.caption, .title {
+  background-color: rgba(0, 0, 0, 0.5);;
+  color: white;
+  z-index: 1;
+  padding: 3px;
+}
+
+.title {
+  font-size: 15pt;
+}
