@@ -28,7 +28,7 @@ angular.module('kittenViewer', [])
     function newCopy() {
       var randomNumber = Math.floor(Math.random() * 10 + 1);
       console.log(randomNumber);
-      return fillerArr.slice(0, randomNumber).join('. ') + '.';
+      return filler.slice(0, randomNumber).join('. ') + '.';
     }
 
     return {
