@@ -21490,7 +21490,6 @@
 	  _createClass(App, [{
 	    key: 'nextKitten',
 	    value: function nextKitten() {
-	      console.log('next');
 	      var kittenNumber = this.state.kittenNumber;
 	      if (kittenNumber < 15) {
 	        kittenNumber++;
@@ -21506,7 +21505,6 @@
 	  }, {
 	    key: 'prevKitten',
 	    value: function prevKitten() {
-	      console.log('previous');
 	      var kittenNumber = this.state.kittenNumber;
 	      if (kittenNumber > 1) {
 	        kittenNumber--;
@@ -21518,7 +21516,6 @@
 	        kittenNumber: kittenNumber,
 	        catIpsum: (0, _kipsum2.default)()
 	      });
-	      console.log(this.state);
 	    }
 	  }, {
 	    key: 'render',
