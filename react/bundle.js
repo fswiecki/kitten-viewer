@@ -21479,7 +21479,7 @@
 	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 
 	    _this.state = {
-	      kittenNumber: 0,
+	      kittenNumber: 1,
 	      catIpsum: (0, _kipsum2.default)()
 	    };
 	    _this.prevKitten = _this.prevKitten.bind(_this);
@@ -21526,7 +21526,8 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'title' },
-	          'Reactive kittens!',
+	          'Reactive kitten # ',
+	          this.state.kittenNumber,
 	          _react2.default.createElement(
 	            'nav',
 	            null,

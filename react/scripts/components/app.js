@@ -7,7 +7,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      kittenNumber: 0,
+      kittenNumber: 1,
       catIpsum: kipsum()
     }
     this.prevKitten = this.prevKitten.bind(this);
@@ -46,7 +46,7 @@ export default class App extends Component {
     return (
       <div className="widget">
         <div className="title">
-          Reactive kittens!
+          Reactive kitten # {this.state.kittenNumber}
           <nav>
             <button type="button" name="previous" onClick={this.prevKitten}>&lt;</button>
             <button type="button" name="next" onClick={this.nextKitten}>&gt;</button>
