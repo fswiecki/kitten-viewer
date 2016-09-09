@@ -21491,7 +21491,7 @@
 	    key: 'nextKitten',
 	    value: function nextKitten() {
 	      var kittenNumber = this.state.kittenNumber;
-	      if (kittenNumber < 15) {
+	      if (kittenNumber < 16) {
 	        kittenNumber++;
 	      } else {
 	        //loop counter if kittenNumber goes below 1
