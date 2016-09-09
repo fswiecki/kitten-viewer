@@ -16,7 +16,7 @@ export default class App extends Component {
 
   nextKitten() {
     let kittenNumber = this.state.kittenNumber;
-    if (kittenNumber < 15) {
+    if (kittenNumber < 16) {
       kittenNumber ++;
     } else {
       //loop counter if kittenNumber goes below 1
