@@ -81,7 +81,7 @@
 	  _reactRedux.Provider,
 	  { store: createStoreWithMiddleware(_reducers2.default) },
 	  _react2.default.createElement(_app2.default, null)
-	), document.querySelector('.container'));
+	), document.querySelector('.app'));
 
 /***/ },
 /* 2 */
@@ -23061,7 +23061,7 @@
 /* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -23091,12 +23091,36 @@
 	  }
 
 	  _createClass(App, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'React simple starter'
+	        "div",
+	        { className: "widget" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "title" },
+	          "COMING SOON!",
+	          _react2.default.createElement(
+	            "nav",
+	            null,
+	            _react2.default.createElement(
+	              "button",
+	              { type: "button", name: "previous" },
+	              "<"
+	            ),
+	            _react2.default.createElement(
+	              "button",
+	              { type: "button", name: "next" },
+	              ">"
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "caption" },
+	          "React version of the kitten viewer is coming soon!"
+	        ),
+	        _react2.default.createElement("img", { src: "http://placekitten.com/300/300", alt: "look at this cute kitten" })
 	      );
 	    }
 	  }]);
