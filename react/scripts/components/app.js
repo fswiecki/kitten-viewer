@@ -15,7 +15,6 @@ export default class App extends Component {
   }
 
   nextKitten() {
-    console.log('next')
     let kittenNumber = this.state.kittenNumber;
     if (kittenNumber < 15) {
       kittenNumber ++;
@@ -30,7 +29,6 @@ export default class App extends Component {
   }
 
   prevKitten() {
-    console.log('previous')
     let kittenNumber = this.state.kittenNumber;
     if (kittenNumber > 1) {
       kittenNumber --;
@@ -42,7 +40,6 @@ export default class App extends Component {
       kittenNumber,
       catIpsum: kipsum()
     });
-    console.log(this.state)
   }
 
   render() {
@@ -58,7 +55,7 @@ export default class App extends Component {
         <div className="caption">
           {this.state.catIpsum}
         </div>
-        <img src={ "http://placekitten.com/300/300?image=" + this.state.kittenNumber} alt="look at this cute kitten" />
+        <img src={ "http://placekitten.com/300/300?image=" + this.state.kittenNumber } alt="look at this cute kitten" />
       </div>
     );
   }
