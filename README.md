@@ -1,7 +1,7 @@
 # Kitten Viewer
 ### an image widget in three parts
 
-View the demo [here](fswiecki.github.io/kitten-viewer)!
+View the demo [here](https://fswiecki.github.io/kitten-viewer/)!
 
 ### Installation
 Bundled files are included in this repo so the kitten viewer works right out of the box.  
